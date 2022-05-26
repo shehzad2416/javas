@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="app2.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+                <div class="p-3 border border-warning col-md-6 col-sm-6">
+                    <input type="number" id="convert" class="form-control" placeholder="Enter currency in suppces" required>
+                    <div class="mt-4 row">
+                        <div class="col-md-3">
+                            <label class="text-light">Select Unit</label>
+                        </div>
+                        <div class="col-md-5">
+                            <select id="unit" class="form-control">
+                                <option value="gg">Unit</option>
+                                <option value="dollar">dollar</option>
+                                <option value="dirham">dirham</option>
+                                <option value="taka">taka</option>
+                                <option value="euro">euro</option>
+                                <option value="riyal">riyal</option>
+                                <option value="dinar">dinar</option>
+                                <option value="pound">pound</option>
+                                <option value="indian currency">indian currency</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-3">
+                            <button class="btn btn-warning btn-block" onclick="calc()">Convert</button>
+                        </div>
+                    </div>
+
+                    <input type="text" id="answer" placeholder="Answer" class="mt-4 form-control" readonly>
+
+                </div>
+        
