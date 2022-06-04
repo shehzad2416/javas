@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+</head>
+   <style>
+       body{
+            background-image: url("https://media.istockphoto.com/photos/money-pile-100-dollar-bills-picture-id175600020?b=1&k=20&m=175600020&s=170667a&w=0&h=f-j9alT05bSRatVPVoH5Kh8IeYLlw3x6cKVV_R2kxZk=");
+             
+       }
+.container{
+    background-color: rgba(0, 0, 0, 0.459);
+}
+   </style>
+<body>
+    <div class="container  mt-5">
+        <h1>Simple intrest</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-light">Aomunt</h2>
+                <input type="text" style="border-radius: 50px;"class="form-control mt-4" placeholder="Enter your Amount" id="simp">
+                <h2 class="text-light">Rate</h2>
+                <input type="text" style="border-radius: 50px;"class="form-control mt-4" placeholder="Enter your Rate" id="rate1">
+                <h2 class="text-light">Time</h2>
+                <input type="text" style="border-radius: 50px;" class="form-control mt-4" placeholder="Enter your Time" id="tim">
+                <button class="btn btn-outline-dark" style="box-shadow: 5px 5px 5px; border-radius: 50px; width: 100%;margin-top: 15px;" onclick="sim() ">Click here</button>
+            </div>
+            <div class="col-md-5">
+                <h1  class="mt-5 text-light">Total Amount </h1>
+                <h1 style="" id="btn" class="mt-5 text-light">Amount</h1>
+            </div>
+        </div>
+    </div>
+    <script>
+        function sim() {
+            var p = parseInt(document.getElementById("simp").value);
+            var r = parseFloat(document.getElementById("rate1").value);
+            var t = parseInt(document.getElementById("tim").value)
+
+            var i = p * (1 + (r * t))
+            document.getElementById("btn").innerText = "your total amount is" + i
+        }
+    </script>
+</body>
+
+</html>
